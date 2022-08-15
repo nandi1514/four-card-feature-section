@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+/* For Mobiles */
+
+.container{
+    max-width: 375px;
+    color: hsl(229, 6%, 66%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10vh auto;
+    padding: 2.5rem 1.5rem;
+    border-radius: 0.8rem;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h2{
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 0.8rem;
+}
+
+.light{
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+}
+
+/* Cards */
+
+.card{
+    background-color: white;
+    margin-bottom: 2rem;
+    box-shadow: 0.1rem 0.1rem 0.8rem gray;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    height: 15rem;
+}
+
+.one{
+    border-top: 0.3rem solid hsl(180, 62%, 55%);
+    background: url(./images/icon-supervisor.svg) no-repeat bottom right/ 5rem;
+    background-position: 90% 90%;
+}
+
+.two{
+    border-top: 0.3rem solid hsl(0, 78%, 62%);
+    background: url(./images/icon-team-builder.svg) no-repeat bottom right/ 5rem;
+    background-position: 90% 90%;
+}
+
+.three{
+    border-top: 0.3rem solid hsl(34, 97%, 64%);
+    background: url(./images/icon-karma.svg) no-repeat bottom right/ 5rem;
+    background-position: 90% 90%;
+}
+
+.four{
+    border-top: 0.3rem solid hsl(212, 86%, 64%);
+    background: url(./images/icon-calculator.svg) no-repeat bottom right/ 5rem;
+    background-position: 90% 90%;
+}
+
+/* For Desktops */
+
+@media screen and (min-width: 900px) {
+
+    .body{
+        background-color: hsl(0, 0%, 98%);
+    }
+
+    .container{
+        min-width: 100vw;
+        padding-inline: 10rem;
+        margin-top: 0;
+    }
+
+    header p{
+        max-width: 35rem;
+    }
+
+    .card-container{
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    .card{
+        max-width: 40rem;
+        max-height: 30rem;
+    }
+
+    .two-col-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .two{
+        grid-column: 2;
+    }
+
+    .three {
+        grid-column: 2;
+    }
+
+}
